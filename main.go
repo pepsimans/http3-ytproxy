@@ -161,7 +161,7 @@ func main() {
 	srv := &http.Server{
 		ReadTimeout:  5 * time.Second,
 		WriteTimeout: 10 * time.Second,
-		Addr:         ":80",
+		Addr:         ":8080",
 		Handler:      &requesthandler{},
 	}
 	if err != nil {
